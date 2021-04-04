@@ -1,0 +1,156 @@
+
+
+    <!DOCTYPE html>
+    <html >
+    <head>
+  <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:  white;
+}
+#sticky-navigation {
+    background: rgba(255,255,255,0.9);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+
+</style>
+       <style>
+
+
+body, html {
+  height: 540px;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("https://i.ibb.co/bF64gBq/meh.jpg");
+
+  /* Full height */
+  height: 625px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+<style type="text/css">
+body {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+table {
+    margin-right: auto;
+    margin-left: auto;
+}
+.image {
+    height: auto;
+    width: auto;
+
+}
+.caption p {
+    font-weight: bold;
+    margin-top: 50px;
+}
+h2 {
+    color: #8A360F;
+}
+img {
+  border: 5px solid #000;
+}
+</style>
+<style>
+body {
+  background-color: black;
+  font-family: cursive;
+}
+
+.glow {
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #8B0000, 0 0 40px #8B0000, 0 0 50px #8B0000, 0 0 60px #8B0000, 0 0 70px #8B0000;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #000000, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+</style>
+
+    </head>
+
+
+<body>
+<div class="bg">
+<ul>
+  <li><a class="active" href=previous><h1 class="glow"> BACK</h1></a></li>
+
+</ul>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8  offset-lg-2">
+
+            <table>
+
+            <tr>
+                <td style="padding-left: 70px" class="image"><a href=webcam><img src="https://i.ibb.co/qNtJVSH/emo.png" alt="Sardines, Bordeaux"></a></td>
+
+                <td style="padding-left: 150px" class="image"><img src="{{ url_for('video_feed') }}" height="60% " width="90%"></td>
+
+            </table>
+        </div>
+    </div>
+</div>
+
+    <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</div>
+</body>
+
+
+    </html>
