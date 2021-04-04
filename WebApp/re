@@ -1,0 +1,8 @@
+.then(status => {
+        if(status => {
+            if(status){
+                navigator.getUserMedia({video: {}},stream =>{
+                    video.srcObject = stream
+                },
+                err => console.log(err)
+                );
