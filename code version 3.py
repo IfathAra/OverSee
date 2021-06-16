@@ -44,6 +44,9 @@ stateprevst="normal"
 statefc = "normal"
 stateprevfc = "normal"
 
+stateang = "normal"
+stateprevang = "normal"
+
 def eyebrow_distance(shape):
     left_eyebrow = shape[21]
     right_eyebrow = shape[22]
@@ -126,7 +129,6 @@ detector = dlib.get_frontal_face_detector()
 #hand_detector = cv2.CascadeClassifier("palm.xml") 
 predictor = dlib.shape_predictor('shape_predictor_68_face_landmarks.dat')
 
-
 print("-> Starting Video Stream")
 vs = VideoStream(src=args["webcam"]).start()
 #vs = VideoStream(src='fariha_ghum.mp4').start()
@@ -205,6 +207,10 @@ while True:
                             cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
                 statedr = "Drowsiness Detected"
                 #playsound('drowsy.wav')
+                lattitude = db.child("TestVal").child("lat").get().val()
+                longitude = db.child("TestVal").child("long").get().val()
+                map_link = 'https://'+'www.google.com/maps/search/Resturants/@'+ lattitude + ',' + longitude + ',15z/data=!3m1!4b1!4m7!2m6!3m5!1sRestaurants!2s' + lattitude + ',' + longitude + '!4m2!1d' + longitude + '!2d' + lattitude +''
+                db.child("TestVal").update({"nearest":map_link})
                 pygame.mixer.music.load("drowsy.wav")
                 pygame.mixer.music.play()
                 while pygame.mixer.music.get_busy() == True:
@@ -261,6 +267,10 @@ while True:
             if(COUNTER_ANGER<50 and COUNTER_ANGER_FRAME >= 200):
                 COUNTER_ANGER = 0
                 COUNTER_ANGER_FRAME = 0
+                stateang = "normal"
+                if(stateang != stateprevang):
+                   db.child("TestVal").update({"Anger":"normal"})
+                   stateprevang = stateang
             if(COUNTER_ANGER >=50 and COUNTER_ANGER_FRAME <= 200):
                 COUNTER_ANGER_FRAME = 0
                 COUNTER_ANGER = 0
