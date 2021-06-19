@@ -1,0 +1,11 @@
+sudo cat /dev/ttyAMA0
+
+sudo systemctl stop serial-getty@ttyAMA0.service
+sudo systemctl disable serial-getty@ttyAMA0.service
+sudo chmod 666 /dev/ttyAMA0
+python gps_14_jun.py
+
+#foraccelo
+python3 scan.py
+sudo i2cdetect -y 1
+
