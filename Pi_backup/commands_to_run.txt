@@ -42,3 +42,14 @@ hdmi_group=2
 hdmi_mode=87
 hdmi_cvt 1024 600 60 6 0 0 0
 hdmi_drive=1
+
+#gps setup
+
+dtparam=spi=on
+dtoverlay=pi3-disable-bt
+core_freq=250
+enable_uart=1
+force_turbo=1
+
+sudo cp /boot/cmdline.txt /boot/cmdline_backup.txt
+sudo nano /boot/cmdline.txt
