@@ -1,0 +1,158 @@
+    1  sudo apt-get install python3-scipy
+    2  pip3 install numpy
+    3  pip3 install imutils
+    4  pip3 install pyrebase
+    5  pip3 install pygame
+    6  pip3 install argparse
+    7  sudo raspi-config
+    8  raspistill -o cam.jpg
+    9  sudo reboot
+   10  raspistill -o cam.jpg
+   11  sudo apt-get install libhdf5-dev libhdf5-serial-dev libhdf5-100
+   12  sudo apt-get install libqtgui4 libqtwebkit4 libqt4-test
+   13  sudo apt-get install libatlas-base-dev
+   14  sudo apt-get install libhdf5-dev libhdf5-serial-dev libhdf5-100
+   15  sudo apt-get install libjasper-dev
+   16  wget https://bootstrap.pypa.io/get-pip.py
+   17  sudo python3 get-pip.py
+   18  sudo pip3 install opencv-contrib-python
+   19  python3
+   20  sudo apt-get install libhdf5-dev libhdf5-serial-dev libhdf5-103
+   21  python3
+   22  sudo nano /etc/dphys-swapfile
+   23  sudo /etc/init.d/dphys-swapfile stop
+   24  sudo /etc/init.d/dphys-swapfile start
+   25  free -m
+   26  sudo raspi-config
+   27  sudo apt-get update
+   28  sudo apt-get install build-essential cmake
+   29  sudo apt-get install libgtk-3-dev
+   30  sudo apt-get install libboost-all-dev
+   31  pip3 install dlib
+   32  sudo nano /etc/dphys-swapfile
+   33  sudo /etc/init.d/dphys-swapfile stop
+   34  sudo /etc/init.d/dphys-swapfile start
+   35  free -m
+   36  sudo raspi-config
+   37  ;python3
+   38  python3
+   39  pip3 install playsound
+   40  cmdline.txt
+   41  sudo nano /boot/config.txt
+   42  sudo raspi-config
+   43  sudo nano /boot/config.txt
+   44  sudo reboot
+   45  sudo nano /boot/config.txt
+   46  sudo raspi-config
+   47  sudo pip3 install FaBo9Axis_MPU9250
+   48  sudo i2cdetect -y 1
+   49  sudo nano /usr/local/lib/python3.7/dist-packages/FaBo9Axis_MPU9250/MPU9250.py
+   50  ls -l /dev
+   51  sudo nano /boot/config.txt
+   52  sudo cp /boot/cmdline.txt /boot/cmdline_backup.txt
+   53  sudo nano /boot/cmdline.txt
+   54  sudo reboot
+   55  sudo cat /dev/ttyAMA0
+   56  ls -l /dev
+   57  pip3 install pynmea2
+   58  pip install pynmea2
+   59  gps_14_jun.py
+   60  python gps_14_jun.py
+   61  python3 gps_14_jun.py
+   62  pip install deepface
+   63  cd Desktop
+   64  raspistill -o ifath.jpg
+   65  pip install tensorflow
+   66  pip install matplotlib
+   67  pip install pandas
+   68  pip install gdown
+   69  pip install tqdm
+   70  pip install pillow
+   71  pip install keras
+   72  pip install flask
+   73  pip install deepface
+   74  sudo pip3 install numpy==1.19.0
+   75  python3
+   76  python
+   77  python3 --version
+   78  sudo apt-get update
+   79  sudo apt install libatlas-base-dev
+   80  pip3 install --user tensorflow
+   81  sudo nano tftest.py
+   82  python3 tftest.py
+   83  sudo nano tftest.py
+   84  python3 tftest.py
+   85  python3
+   86  pip install tensorflow==2.2.0
+   87  pip install tensorflow==2.2
+   88  python3
+   89  sudo apt update
+   90  sudo apt dist-upgrade
+   91  sudo apt clean
+   92  sudo pip install --upgrade pip
+   93  sudo pip3 install --upgrade setuptools
+   94  sudo apt-get install -y libhdf5-dev libc-ares-dev libeigen3-dev gcc gfortran python-dev libgfortran5 libatlas3-base libatlas-base-dev libopenblas-dev libopenblas-base libblas-dev liblapack-dev cython libatlas-base-dev openmpi-bin libopenmpi-dev python3-dev
+   95  sudo pip3 install keras_applications==1.0.8 --no-deps
+   96  sudo pip3 install keras_preprocessing==1.1.0 --no-deps
+   97  sudo pip3 install h5py==2.9.0
+   98  sudo pip3 install pybind11
+   99  pip3 install -U --user six wheel mock
+  100  wget "https://raw.githubusercontent.com/PINTO0309/Tensorflow-bin/master/tensorflow-2.3.0-cp37-none-linux_armv7l_download.sh"
+  101  $ wget "https://raw.githubusercontent.com/PINTO0309/Tensorflow-bin/master/tensorflow-2.3.0-cp37-none-linux_armv7l_download.sh"
+  102  wget "https://raw.githubusercontent.com/PINTO0309/Tensorflow-bin/master/tensorflow-2.3.0-cp37-none-linux_armv7l_download.sh"
+  103  sudo chmod +x tensorflow-2.3.0-cp37-none-linux_armv7l_download.sh
+  104  sudo pip3 install keras_applications==1.0.8 --no-deps
+  105  sudo pip3 install keras_preprocessing==1.1.0 --no-deps
+  106  sudo pip3 install h5py==2.9.0
+  107  sudo pip3 install pybind11
+  108  pip3 install -U --user six wheel mock
+  109  $ wget "https://raw.githubusercontent.com/PINTO0309/Tensorflow-bin/master/tensorflow-2.3.0-cp37-none-linux_armv7l_download.sh"
+  110  wget "https://raw.githubusercontent.com/PINTO0309/Tensorflow-bin/master/tensorflow-2.3.0-cp37-none-linux_armv7l_download.sh"
+  111  ./tensorflow-2.3.0-cp37-none-linux_armv7l_download.sh
+  112  python3
+  113  wget "https://raw.githubusercontent.com/PINTO0309/Tensorflow-bin/master/tensorflow-2.5.0-cp37-none-linux_armv7l_download.sh"
+  114  sudo chmod +x tensorflow-2.5.0-cp37-none-linux_armv7l_download.sh
+  115  sudo pip3 uninstall tensorflow
+  116  sudo -H pip3 install tensorflow-2.3.0-cp37-none-linux_armv7l.whl
+  117  sudo -H pip3 install tensorflow-2.5.0-cp37-none-linux_armv7l.whl
+  118  python3
+  119  sudo pip3 uninstall tensorflow
+  120  sudo pip uninstall tensorflow
+  121  sudo -H pip3 install tensorflow-2.5.0-cp37-none-linux_armv7l.whl
+  122  sudo rm /usr/lib/python3/dist-packages/wrapt-1.10.11.egg-info
+  123  sudo -H pip3 install tensorflow-2.5.0-cp37-none-linux_armv7l.whl
+  124  python3
+  125  sudo pip3 uninstall tensorflow==1.14.0
+  126  sudo pip3 install -U tensorflow 
+  127  python3
+  128  extra-index-url=https://www.piwheels.org/simple
+  129  sudo pip uninstall tensorflow
+  130  pip install deepface
+  131  sudo pip3 install 'tensorflow==1.14.0' --force-uninstall
+  132  cd /home/pi/.local/lib/python3.7/site-packages/keras/
+  133  ls
+  134  cd
+  135  pip uninstall tensorflow
+  136  python
+  137  python3
+  138  cd Desktop
+  139  raspistill -o ifath.jpg
+  140  python3
+  141  python3 scan.py
+  142  sudo i2cdetect -y 1
+  143  sudo cat /dev/ttyAMA0
+  144  sudo i2cdetect -y 1
+  145  raspistill -o ifath.jpg
+  146  python3 scan.py
+  147  pip3 install imutils
+  148  python3
+  149  sudo apt update
+  150  sudo apt dist-upgrade
+  151  python3
+  152  pip3 uninstall imutils
+  153  pip3 install imutils
+  154  python3
+  155  sudo apt-get update; sudo apt-get install --reinstall coreutils
+  156  sudo apt-get update
+  157  sudo apt-get install --reinstall coreutils
+  158  history
